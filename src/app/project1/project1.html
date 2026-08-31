@@ -1,0 +1,18 @@
+<p>Here's my regular calclator. </p>
+<div class="first-para">
+<label for="x">x</label><input class="form-control" id="x" [(ngModel)]="x" type="number"> <br>
+<label for="y">y</label><input class="form-control" id="y" [(ngModel)]="y" type="number"> <br>
+<label for="opp">opp</label><select class="form-select" id="opp" [(ngModel)]="opp">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+</div>
+<br>
+
+<button class="btn btn-primary" (click)="compute()">calculate</button> <br>
+<div class="result-container">
+<label for="result">result</label>
+<div class="result" id="result" [innerHtml]="result"></div>
+</div>
