@@ -1,5 +1,8 @@
-    <a routerLink="project1"> My first project</a> <br>
-    <a routerLink="fib">My second project</a> <br>
-    <a routerLink="prime">My third project</a>
+<nav>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home page</a> 
+    <a routerLink="project1" routerLinkActive="active"> My first project</a> 
+    <a routerLink="fib" routerLinkActive="active">My second project</a> 
+    <a routerLink="prime" routerLinkActive="active">My third project</a>
+</nav>
 <router-outlet>
-  </router-outlet>
+</router-outlet>
